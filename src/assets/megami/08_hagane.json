@@ -1,0 +1,55 @@
+{
+  "id": "08_hagane",
+  "name": "ハガネ",
+  "origin_name": "hagane",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_08_hagane_o_n_1_s2",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_2",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_3",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_4",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_5",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_6",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_n_7",
+        "owner": "08_hagane"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_08_hagane_o_s_1",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_s_2",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_s_3",
+        "owner": "08_hagane"
+      },
+      {
+        "id": "na_08_hagane_o_s_4",
+        "owner": "08_hagane"
+      }
+    ]
+  }
+}

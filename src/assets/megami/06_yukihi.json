@@ -1,0 +1,55 @@
+{
+  "id": "06_yukihi",
+  "name": "ユキヒ",
+  "origin_name": "yukihi",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_06_yukihi_o_n_1",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_2",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_3",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_4",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_5",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_6",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_n_7",
+        "owner": "06_yukihi"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_06_yukihi_o_s_1",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_s_2",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_s_3",
+        "owner": "06_yukihi"
+      },
+      {
+        "id": "na_06_yukihi_o_s_4",
+        "owner": "06_yukihi"
+      }
+    ]
+  }
+}

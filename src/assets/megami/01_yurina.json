@@ -1,0 +1,55 @@
+{
+  "id": "01_yurina",
+  "name": "ユリナ",
+  "origin_name": "yurina",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_01_yurina_o_n_1",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_2",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_3",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_4",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_5_s2",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_6",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_n_7",
+        "owner": "01_yurina"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_01_yurina_o_s_1",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_s_2",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_s_3",
+        "owner": "01_yurina"
+      },
+      {
+        "id": "na_01_yurina_o_s_4",
+        "owner": "01_yurina"
+      }
+    ]
+  }
+}
