@@ -30,7 +30,7 @@
     data() {
       return {
         megamiLeft: "01_yurina",
-        megamiRight: "06_yukihi"
+        megamiRight: "02_saine"
       }
     }
   }
