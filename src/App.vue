@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <b-navbar variant="primary" type="dark">
-            <b-navbar-brand href="#">双掌撩乱シミュレーター</b-navbar-brand>
+            <b-navbar-brand href="#">双掌撩乱＆眼前構築シミュレーター</b-navbar-brand>
 
             <b-navbar-nav>
                 <b-nav-item @click="$bvModal.show('about')">about</b-nav-item>
