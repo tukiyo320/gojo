@@ -1,0 +1,55 @@
+{
+  "id": "09_chikage_a1",
+  "name": "チカゲ(第四章)",
+  "origin_name": "chikage",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_09_chikage_o_n_1",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_n_2",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_n_3",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_n_4",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_a1_n_5",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_a1_n_6",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_n_7",
+        "owner": "09_chikage"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_09_chikage_o_s_1",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_s_2",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_o_s_3",
+        "owner": "09_chikage"
+      },
+      {
+        "id": "na_09_chikage_a1_s_4",
+        "owner": "09_chikage"
+      }
+    ]
+  }
+}

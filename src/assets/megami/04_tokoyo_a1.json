@@ -1,0 +1,55 @@
+{
+  "id": "04_tokoyo_a1",
+  "name": "トコヨ",
+  "origin_name": "tokoyo",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_04_tokoyo_a1_n_1",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_n_2",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_n_3",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_n_4",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_a1_n_5_s3",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_n_6",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_n_7_s2",
+        "owner": "04_tokoyo"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_04_tokoyo_o_s_1",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_a1_s_2_s3",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_s_3_s2",
+        "owner": "04_tokoyo"
+      },
+      {
+        "id": "na_04_tokoyo_o_s_4",
+        "owner": "04_tokoyo"
+      }
+    ]
+  }
+}

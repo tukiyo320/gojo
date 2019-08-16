@@ -1,0 +1,55 @@
+{
+  "id": "12_raira",
+  "name": "ライラ",
+  "origin_name": "raira",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_12_raira_o_n_1_s2",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_2",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_3",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_4",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_5",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_6",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_n_7",
+        "owner": "12_raira"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_12_raira_o_s_1",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_s_2",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_s_3_s4",
+        "owner": "12_raira"
+      },
+      {
+        "id": "na_12_raira_o_s_4",
+        "owner": "12_raira"
+      }
+    ]
+  }
+}

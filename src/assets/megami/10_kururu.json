@@ -1,0 +1,55 @@
+{
+  "id": "10_kururu",
+  "name": "クルル",
+  "origin_name": "kururu",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_10_kururu_o_n_1",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_2",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_3",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_4",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_5",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_6",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_n_7",
+        "owner": "10_kururu"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_10_kururu_o_s_1",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_s_2_s2",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_s_3",
+        "owner": "10_kururu"
+      },
+      {
+        "id": "na_10_kururu_o_s_4",
+        "owner": "10_kururu"
+      }
+    ]
+  }
+}

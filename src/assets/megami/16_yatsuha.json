@@ -1,0 +1,55 @@
+{
+  "id": "16_yatsuha",
+  "name": "ヤツハ",
+  "origin_name": "yatsuha",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_16_yatsuha_o_n_1",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_2",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_3",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_4",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_5",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_6",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_n_7",
+        "owner": "16_yatsuha"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_16_yatsuha_o_s_1",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_s_2",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_s_3",
+        "owner": "16_yatsuha"
+      },
+      {
+        "id": "na_16_yatsuha_o_s_4",
+        "owner": "16_yatsuha"
+      }
+    ]
+  }
+}

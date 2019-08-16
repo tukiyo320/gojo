@@ -1,0 +1,55 @@
+{
+  "id": "13_utsuro",
+  "name": "ウツロ",
+  "origin_name": "utsuro",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_13_utsuro_o_n_1",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_2",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_3",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_4",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_5",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_6",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_n_7",
+        "owner": "13_utsuro"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_13_utsuro_o_s_1",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_s_2",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_s_3",
+        "owner": "13_utsuro"
+      },
+      {
+        "id": "na_13_utsuro_o_s_4",
+        "owner": "13_utsuro"
+      }
+    ]
+  }
+}

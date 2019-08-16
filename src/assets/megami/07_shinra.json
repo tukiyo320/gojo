@@ -1,0 +1,55 @@
+{
+  "id": "07_shinra",
+  "name": "シンラ",
+  "origin_name": "shinra",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_07_shinra_o_n_1",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_2",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_3",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_4",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_5",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_6_s3",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_n_7",
+        "owner": "07_shinra"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_07_shinra_o_s_1",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_s_2_s2",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_s_3",
+        "owner": "07_shinra"
+      },
+      {
+        "id": "na_07_shinra_o_s_4",
+        "owner": "07_shinra"
+      }
+    ]
+  }
+}

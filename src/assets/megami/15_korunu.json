@@ -1,0 +1,55 @@
+{
+  "id": "15_korunu",
+  "name": "コルヌ",
+  "origin_name": "korunu",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_15_korunu_o_n_1",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_2",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_3",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_4",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_5",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_6",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_n_7",
+        "owner": "15_korunu"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_15_korunu_o_s_1",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_s_2",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_s_3",
+        "owner": "15_korunu"
+      },
+      {
+        "id": "na_15_korunu_o_s_4",
+        "owner": "15_korunu"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "03_himika_a1",
+  "name": "ヒミカ(原初)",
+  "origin_name": "himika",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_03_himika_o_n_1",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_a1_n_2",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_n_3",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_n_4",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_a1_n_5",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_n_6",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_n_7",
+        "owner": "03_himika"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_03_himika_o_s_1",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_a1_s_2",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_s_3",
+        "owner": "03_himika"
+      },
+      {
+        "id": "na_03_himika_o_s_4",
+        "owner": "03_himika"
+      }
+    ]
+  }
+}

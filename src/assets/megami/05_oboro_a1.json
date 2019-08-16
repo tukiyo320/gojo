@@ -1,0 +1,55 @@
+{
+  "id": "05_oboro_a1",
+  "name": "オボロ(第三章)",
+  "origin_name": "oboro",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_05_oboro_o_n_1",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_a1_n_2",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_a1_n_3",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_n_4_s3",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_n_5",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_n_6",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_n_7",
+        "owner": "05_oboro"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_05_oboro_o_s_1",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_s_2_s3",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_o_s_3",
+        "owner": "05_oboro"
+      },
+      {
+        "id": "na_05_oboro_a1_s_4",
+        "owner": "05_oboro"
+      }
+    ]
+  }
+}

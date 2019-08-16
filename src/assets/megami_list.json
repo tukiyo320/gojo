@@ -10,13 +10,123 @@
     "origin_name": "yurina"
   },
   {
+    "id": "02_saine",
+    "name": "サイネ",
+    "origin_name": "saine"
+  },
+  {
+    "id": "02_saine_a1",
+    "name": "サイネ(第二章)",
+    "origin_name": "saine"
+  },
+  {
+    "id": "02_saine_a2",
+    "name": "サイネ(徒神)",
+    "origin_name": "saine"
+  },
+  {
+    "id": "03_himika",
+    "name": "ヒミカ",
+    "origin_name": "himika"
+  },
+  {
+    "id": "03_himika_a1",
+    "name": "ヒミカ(原初)",
+    "origin_name": "himika"
+  },
+  {
+    "id": "04_tokoyo",
+    "name": "トコヨ",
+    "origin_name": "tokoyo"
+  },
+  {
+    "id": "04_tokoyo_a1",
+    "name": "トコヨ(旅芸人)",
+    "origin_name": "tokoyo"
+  },
+  {
+    "id": "05_oboro",
+    "name": "オボロ",
+    "origin_name": "oboro"
+  },
+  {
+    "id": "05_oboro_a1",
+    "name": "オボロ(第三章)",
+    "origin_name": "oboro"
+  },
+  {
     "id": "06_yukihi",
     "name": "ユキヒ",
     "origin_name": "yukihi"
   },
   {
+    "id": "07_shinra",
+    "name": "シンラ",
+    "origin_name": "shinra"
+  },
+  {
+    "id": "07_shinra_a1",
+    "name": "シンラ(教主)",
+    "origin_name": "shinra"
+  },
+  {
     "id": "08_hagane",
     "name": "ハガネ",
     "origin_name": "hagane"
+  },
+  {
+    "id": "09_chikage",
+    "name": "チカゲ",
+    "origin_name": "chikage"
+  },
+  {
+    "id": "09_chikage_a1",
+    "name": "チカゲ(第四章)",
+    "origin_name": "chikage"
+  },
+  {
+    "id": "10_kururu",
+    "name": "クルル",
+    "origin_name": "kururu"
+  },
+  {
+    "id": "10_kururu_a1",
+    "name": "クルル(探索者)",
+    "origin_name": "kururu"
+  },
+  {
+    "id": "11_thallya",
+    "name": "サリヤ",
+    "origin_name": "thallya"
+  },
+  {
+    "id": "12_raira",
+    "name": "ライラ",
+    "origin_name": "raira"
+  },
+  {
+    "id": "13_utsuro",
+    "name": "ウツロ",
+    "origin_name": "utsuro"
+  },
+  {
+    "id": "13_utsuro_a1",
+    "name": "ウツロ(終章)",
+    "origin_name": "utsuro"
+  },
+  {
+    "id": "14_honoka",
+    "name": "ホノカ",
+    "origin_name": "honoka"
+  },
+  {
+    "id": "15_korunu",
+    "name": "コルヌ",
+    "origin_name": "korunu"
+  },
+  {
+    "id": "16_yatsuha",
+    "name": "ヤツハ",
+    "origin_name": "yatsuha"
   }
 ]

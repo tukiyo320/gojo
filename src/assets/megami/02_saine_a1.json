@@ -1,0 +1,55 @@
+{
+  "id": "02_saine_a1",
+  "name": "サイネ(第二章)",
+  "origin_name": "saine",
+  "cards": {
+    "normal": [
+      {
+        "id": "na_02_saine_o_n_1",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_n_2",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_a1_n_3",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_n_4",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_n_5",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_a1_n_6",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_n_7",
+        "owner": "02_saine"
+      }
+    ],
+    "special": [
+      {
+        "id": "na_02_saine_o_s_1_s2",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_a1_s_2",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_s_3_s2",
+        "owner": "02_saine"
+      },
+      {
+        "id": "na_02_saine_o_s_4_s2",
+        "owner": "02_saine"
+      }
+    ]
+  }
+}
