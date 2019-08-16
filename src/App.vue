@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <ribbon text="fork me on github!!" url="https://github.com/TukiyoIgarashi/gojo" ></ribbon>
         <b-navbar variant="primary" type="dark">
             <b-navbar-brand href="#">双掌撩乱＆眼前構築シミュレーター</b-navbar-brand>
 
@@ -30,12 +31,14 @@
 <script>
   import Deck from './components/deck.vue'
   import CardList from './components/cardList.vue'
+  import Ribbon from 'vue-ribbon'
 
   export default {
     name: 'app',
     components: {
       Deck: Deck,
-      CardList: CardList
+      CardList: CardList,
+      Ribbon: Ribbon
     },
   }
 </script>

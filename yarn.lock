@@ -6876,6 +6876,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-ribbon@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/vue-ribbon/-/vue-ribbon-1.0.1.tgz#777ba7c8c5ece9202def5408e980f3a77a655b2b"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/vue-style-loader/download/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
