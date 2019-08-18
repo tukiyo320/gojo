@@ -31,13 +31,13 @@
     cardNo: "",
     megamiId: "",
     originName: "",
-    src: require(`@/assets/cards/cardback_normal.png`),
+    src: require(`@/assets/cards/cardback_normal.webp`),
   };
   const specialEmptyCard = {
     cardNo: "",
     megamiId: "",
     originName: "",
-    src: require(`@/assets/cards/cardback_special.png`),
+    src: require(`@/assets/cards/cardback_special.webp`),
   };
 
   export default {

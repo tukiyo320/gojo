@@ -51,7 +51,7 @@
           originName: meta.origin_name,
           ownerMegamiId: it.owner,
           megamiId: id,
-          src: require(`@/assets/cards/${it.id}.png`),
+          src: require(`@/assets/cards/${it.id}.webp`),
           type: "normal"
         }));
         const specials = meta.cards.special.map(it => ({
@@ -59,7 +59,7 @@
           origin_name: meta.origin_name,
           ownerMegamiId: it.owner,
           megamiId: id,
-          src: require(`@/assets/cards/${it.id}.png`),
+          src: require(`@/assets/cards/${it.id}.webp`),
           type: "special"
         }));
 
