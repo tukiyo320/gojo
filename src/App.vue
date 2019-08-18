@@ -6,6 +6,9 @@
 
             <b-navbar-nav>
                 <b-nav-item @click="$bvModal.show('about')">about</b-nav-item>
+                <b-nav-item>
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                </b-nav-item>
             </b-navbar-nav>
         </b-navbar>
         <div>
