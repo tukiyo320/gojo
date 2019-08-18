@@ -21,9 +21,12 @@
         </div>
         <b-modal id="about" title="このサイトについて" ok-only>
             <p>
-                ライセンス
+                Author<br>
+                <a href="https://twitter.com/tukiyo320">@tukiyo320</a>
             </p>
             <p>
+                ライセンス<br>
+                <br>
                 画像：ふるよにコモンズ/BakaFire,TOKIAME<br>
                 <a href="https://main-bakafire.ssl-lolipop.jp/furuyoni/na/rule.html" target="_blank">https://main-bakafire.ssl-lolipop.jp/furuyoni/na/rule.html</a>
             </p>
