@@ -39,7 +39,7 @@ then, run deploy script (ex: `firebase deploy`)
 ## license
 *THE SUSHI-WARE LICENSE*
 
-[TuikiyoIgarashi](https://twitter.com) wrote this file.
+[TukiyoIgarashi](https://twitter.com/tukiyo320) wrote this file.
 
 As long as you retain this notice you can do whatever you want
 with this stuff. If we meet some day, and you think this stuff
