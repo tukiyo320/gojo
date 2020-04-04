@@ -7,11 +7,8 @@
             <b-navbar-nav>
                 <b-nav-item @click="$bvModal.show('about')">about</b-nav-item>
                 <b-nav-item>
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
-                </b-nav-item>
-                <b-nav-item>
-                    <b-button @click="onStoreClicked">
-                        保存する
+                    <b-button @click="onStoreClicked" variant="light" :disabled="isDeckSaving">
+                        <v-fa :icon="['fab', 'twitter']"></v-fa> 構築をシェアする
                     </b-button>
                 </b-nav-item>
             </b-navbar-nav>
@@ -52,9 +49,30 @@
       CardList: CardList,
       Ribbon: Ribbon
     },
+    data() {
+      return {
+        isDeckSaving: false
+      }
+    },
+    mounted() {
+      eventHub.$on('onSaveCompleted', this.onSaveCompleted)
+    },
     methods: {
       onStoreClicked() {
+        this.isDeckSaving = true;
         eventHub.$emit("storeDeck")
+      },
+      onSaveCompleted(uuid) {
+        this.isDeckSaving = false;
+        if (uuid !== null) {
+            window.open(this.makeShareUrl(uuid), null, 'width=800,height=300')
+        }
+      },
+      makeShareUrl(uuid) {
+        const text = '私の構築はコレ！ -ふるよに双掌繚乱＆眼前構築シミュレーター-';
+        const url = `${window.location.origin}/s/${uuid}`;
+
+        return `https://twitter.com/intent/tweet?text=${text}&url=${url}`
       }
     }
   }

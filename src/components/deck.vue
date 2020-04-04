@@ -113,8 +113,9 @@
             specials: this.specials
           }, { merge: false })
         }).then(() => {
-          alert('構築を保存しました')
+          eventHub.$emit('onSaveCompleted', uuid)
         }).catch((error) => {
+          eventHub.$emit('onSaveCompleted', null);
           alert(`画像の保存に失敗しました`);
           console.log(error)
         })
