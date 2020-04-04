@@ -3,10 +3,12 @@ const express = require('express');
 const app = express();
 const admin = require('firebase-admin');
 
-admin.initializeApp(functions.config().firebase);
+admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+  databaseURL: 'https://gojo-b7add.firebaseio.com'
+});
 
 const db = admin.firestore();
-const storage = admin.storage();
 
 const site_name = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
 const title = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
@@ -19,6 +21,34 @@ const fb_appid = '';
 const tw_description = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
 const tw_site = '';
 const tw_creator = '';
+
+async function generateSignedUrl (filename) {
+  // [START storage_generate_signed_url]
+  // Imports the Google Cloud client library
+  const { Storage } = require('@google-cloud/storage');
+
+  // Creates a client
+  const storage = new Storage({
+    projectId: "gojo-b7add",
+    keyFilename: "service_key.json"
+  });
+
+  const bucketName = 'gojo-b7add.appspot.com';
+  const options = {
+    action: 'read',
+    expires: Date.now() + 1000 * 60 * 60 * 24 * 30 // 1month
+  };
+
+  // Get a signed URL for the file
+  const [url] = await storage
+    .bucket(bucketName)
+    .file(filename)
+    .getSignedUrl(options);
+
+  console.log(`The signed url for ${filename} is ${url}.`);
+  // [END storage_generate_signed_url]
+  return url
+}
 
 const genHtml = (imageUrl) => `
 <!DOCTYPE html>
@@ -54,15 +84,23 @@ const genHtml = (imageUrl) => `
 `;
 
 app.get('/:id', async (req, res) => {
-  const doc = await db.collection('decks').doc(req.params.id).get();
-  if (!doc.exists) {
-    console.log(`${req.params.id} not exist`);
-    res.status(404).send('404 Not Exist')
-  } else {
-    const url = await storage.ref(`${req.params.id}.png`).getDownloadURL();
-    const html = genHtml(url);
-    res.set('cache-control', 'public, max-age=3600');
-    res.send(html)
-  }
+  console.log("request");
+  db.collection('decks').doc(req.params.id).get()
+    .then((doc) => {
+      if (!doc.exists) {
+        throw Error(`${req.params.id} not exist`);
+      } else {
+        return generateSignedUrl(`${req.params.id}.png`)
+      }
+    })
+    .then((url) => {
+      const html = genHtml(url);
+      res.set('cache-control', 'public, max-age=3600');
+      res.send(html)
+    })
+    .catch((error) => {
+      console.log(error);
+      res.status(404).send('404 Not Exist')
+    });
 });
 exports.s = functions.https.onRequest(app);
