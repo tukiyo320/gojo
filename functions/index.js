@@ -13,7 +13,7 @@ const db = admin.firestore();
 const site_name = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
 const title = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
 const meta_description = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
-const meta_keywords = ['プログラミング'];
+const meta_keywords = ['桜降る代に決闘を'];
 const og_description = 'ふるよに双掌繚乱＆眼前構築シミュレーター';
 const og_image_width = 1200;
 const og_image_height = 630;
@@ -83,7 +83,7 @@ const genHtml = (imageUrl) => `
 </html>
 `;
 
-app.get('/:id', async (req, res) => {
+app.get('/s/:id', async (req, res) => {
   console.log("request");
   db.collection('decks').doc(req.params.id).get()
     .then((doc) => {
