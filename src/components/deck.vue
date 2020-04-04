@@ -30,6 +30,8 @@
   import firebase from 'firebase'
   import crypto from 'crypto'
 
+  const firebaseConfig = require('../../firebase.config');
+
   const normalEmptyCard = {
     cardNo: "",
     megamiId: "",
