@@ -106,6 +106,7 @@
         const uuid = this.uuid;
         const filename = `${uuid}.jpg`;
         const option = {
+          height: 600,
           scale: 1200 / this.$refs.capture.clientWidth
         };
 
