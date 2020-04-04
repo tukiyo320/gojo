@@ -90,7 +90,7 @@ app.get('/s/:id', async (req, res) => {
       if (!doc.exists) {
         throw Error(`${req.params.id} not exist`);
       } else {
-        return generateSignedUrl(`${req.params.id}.png`)
+        return generateSignedUrl(`${req.params.id}.jpg`)
       }
     })
     .then((url) => {

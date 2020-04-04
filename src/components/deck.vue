@@ -102,12 +102,17 @@
       },
       toImage() {
         const uuid = this.uuid;
-        const filename = `${uuid}.png`;
-        html2canvas(this.$refs.capture).then(canvas => {
+        const filename = `${uuid}.jpg`;
+        const option = {
+          width: 1200,
+          height: 600,
+        };
+
+        html2canvas(this.$refs.capture, option).then(canvas => {
           const sRef = firebase.storage().ref();
           const fileRef = sRef.child(filename);
 
-          return fileRef.putString(canvas.toDataURL(), 'data_url')
+          return fileRef.putString(canvas.toDataURL('image/jpeg'), 'data_url')
         }).then(() => {
           const deck = firebase.firestore().collection('decks').doc(uuid);
           return deck.set({
