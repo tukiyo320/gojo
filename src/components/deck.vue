@@ -105,9 +105,10 @@
       toImage() {
         const uuid = this.uuid;
         const filename = `${uuid}.jpg`;
+        const scale = 1200 / this.$refs.capture.clientWidth;
         const option = {
-          height: 600,
-          scale: 1200 / this.$refs.capture.clientWidth
+          height: 600 / scale,
+          scale: scale
         };
 
         html2canvas(this.$refs.capture, option).then(canvas => {
