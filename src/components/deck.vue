@@ -60,6 +60,7 @@
 
     mounted: function () {
       eventHub.$on('megamiChanged', this.onMegamiChanged);
+      eventHub.$on('storeDeck', this.toImage);
       firebase.initializeApp(firebaseConfig)
     },
     data() {
@@ -108,7 +109,7 @@
         }
       },
       toImage() {
-        const uuid = this.uuid();
+        const uuid = this.uuid;
         const filename = `${uuid}.png`;
         html2canvas(this.$refs.capture).then(canvas => {
           const sRef = firebase.storage().ref();
@@ -118,8 +119,11 @@
         }).then(() => {
           const deck = firebase.firestore().collection('decks').doc(uuid);
           return deck.set({
-            message: 'this is deck'
+            normals: this.normals,
+            specials: this.specials
           }, { merge: false })
+        }).then(() => {
+          alert('構築を保存しました')
         }).catch((error) => {
           alert(`画像の保存に失敗しました`);
           console.log(error)
