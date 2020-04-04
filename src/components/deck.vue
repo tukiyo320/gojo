@@ -30,16 +30,6 @@
   import firebase from 'firebase'
   import crypto from 'crypto'
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyDalM_-xpT3Pj2f697TlgAa6PQwKPSIL10",
-    authDomain: "gojo-b7add.firebaseapp.com",
-    databaseURL: "https://gojo-b7add.firebaseio.com",
-    projectId: "gojo-b7add",
-    storageBucket: "gojo-b7add.appspot.com",
-    messagingSenderId: "203667529337",
-    appId: "1:203667529337:web:8f07a968be5a4efd14bea8"
-  };
-
   const normalEmptyCard = {
     cardNo: "",
     megamiId: "",
@@ -60,6 +50,7 @@
 
     mounted: function () {
       eventHub.$on('megamiChanged', this.onMegamiChanged);
+      eventHub.$on('storeDeck', this.toImage);
       firebase.initializeApp(firebaseConfig)
     },
     data() {
@@ -108,7 +99,7 @@
         }
       },
       toImage() {
-        const uuid = this.uuid();
+        const uuid = this.uuid;
         const filename = `${uuid}.png`;
         html2canvas(this.$refs.capture).then(canvas => {
           const sRef = firebase.storage().ref();
@@ -118,8 +109,11 @@
         }).then(() => {
           const deck = firebase.firestore().collection('decks').doc(uuid);
           return deck.set({
-            message: 'this is deck'
+            normals: this.normals,
+            specials: this.specials
           }, { merge: false })
+        }).then(() => {
+          alert('構築を保存しました')
         }).catch((error) => {
           alert(`画像の保存に失敗しました`);
           console.log(error)

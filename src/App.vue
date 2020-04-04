@@ -9,6 +9,11 @@
                 <b-nav-item>
                     <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
                 </b-nav-item>
+                <b-nav-item>
+                    <b-button @click="onStoreClicked">
+                        保存する
+                    </b-button>
+                </b-nav-item>
             </b-navbar-nav>
         </b-navbar>
         <div>
@@ -38,6 +43,7 @@
   import Deck from './components/deck.vue'
   import CardList from './components/cardList.vue'
   import Ribbon from 'vue-ribbon'
+  import eventHub from './eventHub'
 
   export default {
     name: 'app',
@@ -46,6 +52,11 @@
       CardList: CardList,
       Ribbon: Ribbon
     },
+    methods: {
+      onStoreClicked() {
+        eventHub.$emit("storeDeck")
+      }
+    }
   }
 </script>
 
