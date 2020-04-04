@@ -76,7 +76,7 @@
     },
     computed: {
       uuid() {
-        const text = this.normals.toString() + this.specials.toString();
+        const text = this.normals.map((it) => it.no).toString() + this.specials.map(it => it.no).toString();
         return crypto.createHash('sha1').update(text).digest('hex')
       }
     },
