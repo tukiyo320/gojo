@@ -27,6 +27,18 @@
   import draggable from 'vuedraggable'
   import eventHub from '../eventHub'
   import html2canvas from 'html2canvas'
+  import firebase from 'firebase'
+  import crypto from 'crypto'
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyDalM_-xpT3Pj2f697TlgAa6PQwKPSIL10",
+    authDomain: "gojo-b7add.firebaseapp.com",
+    databaseURL: "https://gojo-b7add.firebaseio.com",
+    projectId: "gojo-b7add",
+    storageBucket: "gojo-b7add.appspot.com",
+    messagingSenderId: "203667529337",
+    appId: "1:203667529337:web:8f07a968be5a4efd14bea8"
+  };
 
   const normalEmptyCard = {
     cardNo: "",
@@ -47,7 +59,8 @@
     components: {draggable},
 
     mounted: function () {
-      eventHub.$on('megamiChanged', this.onMegamiChanged)
+      eventHub.$on('megamiChanged', this.onMegamiChanged);
+      firebase.initializeApp(firebaseConfig)
     },
     data() {
       const normals = Array(7).fill(normalEmptyCard);
@@ -70,6 +83,12 @@
         specials: specials
       }
     },
+    computed: {
+      uuid() {
+        const text = this.normals.toString() + this.specials.toString();
+        return crypto.createHash('sha1').update(text).digest('hex')
+      }
+    },
     methods: {
       onMegamiChanged(val, oldVal) {
         this.normals.forEach((normal, index) => {
@@ -89,9 +108,21 @@
         }
       },
       toImage() {
+        const uuid = this.uuid();
+        const filename = `${uuid}.png`;
         html2canvas(this.$refs.capture).then(canvas => {
-        }).catch(() => {
-          alert(`画像の生成に失敗しました`)
+          const sRef = firebase.storage().ref();
+          const fileRef = sRef.child(filename);
+
+          return fileRef.putString(canvas.toDataURL(), 'data_url')
+        }).then(() => {
+          const deck = firebase.firestore().collection('decks').doc(uuid);
+          return deck.set({
+            message: 'this is deck'
+          }, { merge: false })
+        }).catch((error) => {
+          alert(`画像の保存に失敗しました`);
+          console.log(error)
         })
       }
     }
