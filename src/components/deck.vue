@@ -1,25 +1,27 @@
 <template>
-    <div class="container-cards" ref="capture">
-        <draggable
-                v-model="normals"
-                :group="normalOptions">
-                <drop v-for="(card, index) in normals"
-                     class="item"
-                     :key="card.no"
-                    @drop="onDrop($event, index, normals, `normal`)">
-                    <img class="listed_card" :src="card.src">
+    <div class="container-cards">
+        <div ref="capture">
+            <draggable
+                    :group="normalOptions"
+                    v-model="normals">
+                <drop :key="card.no"
+                      @drop="onDrop($event, index, normals, `normal`)"
+                      class="item"
+                      v-for="(card, index) in normals">
+                    <img :src="card.src" class="listed_card">
                 </drop>
-        </draggable>
-        <draggable
-                v-model="specials"
-                :group="specialOptions">
-            <drop v-for="(card, index) in specials"
-                  class="item"
-                  :key="card.no"
-                @drop="onDrop($event, index, specials, `special`)">
-                <img class="listed_card" :src="card.src">
-            </drop>
-        </draggable>
+            </draggable>
+            <draggable
+                    :group="specialOptions"
+                    v-model="specials">
+                <drop :key="card.no"
+                      @drop="onDrop($event, index, specials, `special`)"
+                      class="item"
+                      v-for="(card, index) in specials">
+                    <img :src="card.src" class="listed_card">
+                </drop>
+            </draggable>
+        </div>
     </div>
 </template>
 
@@ -97,7 +99,7 @@
       },
       onDrop(data, index, list, type) {
         if (data && data.card.type === type) {
-            list.splice(index, 1, data.card)
+          list.splice(index, 1, data.card)
         }
       },
       toImage() {
@@ -117,7 +119,7 @@
           return deck.set({
             normals: this.normals,
             specials: this.specials
-          }, { merge: false })
+          }, {merge: false})
         }).then(() => {
           eventHub.$emit('onSaveCompleted', uuid)
         }).catch((error) => {
