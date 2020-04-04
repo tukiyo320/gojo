@@ -11,6 +11,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.28",
     "core-js": "^2.6.5",
+    "html2canvas": "^1.0.0-rc.5",
     "vue": "^2.6.10",
     "vue-drag-drop": "^1.1.4",
     "vue-ribbon": "^1.0.1",

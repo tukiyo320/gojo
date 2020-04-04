@@ -1,5 +1,5 @@
 <template>
-    <div class="container-cards">
+    <div class="container-cards" ref="capture">
         <draggable
                 v-model="normals"
                 :group="normalOptions">
@@ -26,6 +26,7 @@
 <script>
   import draggable from 'vuedraggable'
   import eventHub from '../eventHub'
+  import html2canvas from 'html2canvas'
 
   const normalEmptyCard = {
     cardNo: "",
@@ -86,6 +87,12 @@
         if (data && data.card.type === type) {
             list.splice(index, 1, data.card)
         }
+      },
+      toImage() {
+        html2canvas(this.$refs.capture).then(canvas => {
+        }).catch(() => {
+          alert(`画像の生成に失敗しました`)
+        })
       }
     }
   }
