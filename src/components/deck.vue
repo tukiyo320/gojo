@@ -1,6 +1,6 @@
 <template>
     <div class="container-cards">
-        <div ref="capture">
+        <div id="deck-cards" ref="capture">
             <draggable
                     :group="normalOptions"
                     v-model="normals">
@@ -158,5 +158,9 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    #deck-cards {
+        padding: 20px;
     }
 </style>
